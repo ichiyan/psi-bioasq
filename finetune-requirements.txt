@@ -1,0 +1,12 @@
+transformers
+transformers[torch]
+huggingface_hub
+hf-transfer
+torch
+einops
+tiktoken
+sentence-transformers
+lark
+wandb
+datasets
+nltk

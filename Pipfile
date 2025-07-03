@@ -1,0 +1,59 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://download.pytorch.org/whl/"
+verify_ssl = true
+name = "downloadpytorch"
+
+[packages]
+huggingface-hub = {extras = ["hf_xet"], version = "*"}
+pandas = "*"
+pyarrow = "*"
+langchain-community = "*"
+pystemmer = "*"
+jax = {extras = ["cpu"], version = "*"}
+sentence-transformers = "*"
+tqdm = "*"
+langchain-huggingface = "*"
+langchain-qdrant = "*"
+qdrant-client = "*"
+ipywidgets = "*"
+torchvision = "*"
+torchaudio = "*"
+torch = {version = "==2.7.1", index = "downloadpytorch"}
+datasets = "*"
+langchain-ollama = "*"
+lark = "*"
+openai = "*"
+modal = "*"
+inpars = "*"
+wandb = "*"
+nbformat = "*"
+pipenv-to-requirements = "*"
+hf-transfer = "*"
+nltk = "*"
+flashrank = "*"
+bitsandbytes = "*"
+transformers = "*"
+matplotlib = "*"
+ranx = "*"
+fastembed = "*"
+neo4j = "*"
+langchain-experimental = "*"
+langchain-openai = "*"
+chainlit = "*"
+langchain-neo4j = "*"
+seaborn = "*"
+numpy = "*"
+statsmodels = "*"
+scipy = "*"
+rank-bm25 = "*"
+
+[dev-packages]
+ipykernel = "*"
+
+[requires]
+python_version = "3.12"
