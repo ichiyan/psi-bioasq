@@ -712,7 +712,7 @@ def plot_forest(all_pairwise_stats, base_model: str, metrics_directions: dict[st
         plt.text(
             text_x,
             row["Plot Y"],
-            f"d={row['Cliff\'s Delta']:.2f} ({effect_size})",
+            f"δ = {row['Cliff\'s Delta']:.2f} ({effect_size})",
             fontsize=9,
             va='center',
             ha='left'
@@ -733,11 +733,11 @@ def plot_forest(all_pairwise_stats, base_model: str, metrics_directions: dict[st
 
     # Cliff's Delta effect size legend with thresholds
     effect_legend = [
-        Line2D([0], [0], marker='', color='none', label="Effect sizes (|d|):"),
-        Line2D([0], [0], marker='', color='none', label="N = negligible (< 0.147)"),
-        Line2D([0], [0], marker='', color='none', label="S = small (0.147 - 0.33)"),
-        Line2D([0], [0], marker='', color='none', label="M = medium (0.33 - 0.474)"),
-        Line2D([0], [0], marker='', color='none', label="L = large (>= 0.474)"),
+        Line2D([0], [0], marker='', color='none', label="Effect sizes (|δ|):"),
+        Line2D([0], [0], marker='', color='none', label="N = negligible (|δ| < 0.147)"),
+        Line2D([0], [0], marker='', color='none', label="S = small (0.147 ≤ |δ| < 0.33)"),
+        Line2D([0], [0], marker='', color='none', label="M = medium (0.33 ≤ |δ| < 0.474)"),
+        Line2D([0], [0], marker='', color='none', label="L = large (≥ 0.474)"),
     ]
 
     plt.legend(
