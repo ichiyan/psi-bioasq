@@ -1,5 +1,7 @@
 # Implementation of Information Retrieval Methods on Biomedical Data 
 
+You can read the paper/write-up [here](https://drive.google.com/file/d/1ccvrY4Ber6EdItu_nlBqrGI9VQlfvG_z/view?usp=sharing). 
+
 ## Setup:
 
 1. Install dependendencies and activate environment
